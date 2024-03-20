@@ -85,6 +85,30 @@ img {
   border: none;
 }
 
+#email::placeholder,
+#password::placeholder {
+  font-size: 18px;
+}
+
+#input-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#checkbox {
+  margin-right: 0;
+}
+
+label {
+  margin-right: 5px;
+  color: white;
+}
+
+NavLink {
+  margin-left: auto;
+}
+
 button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -108,7 +132,11 @@ button:focus-visible {
   margin-top: 1.5em;
   width: 90%;
   display: flex;
-  align-items: center;
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -3%);
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: light) {
